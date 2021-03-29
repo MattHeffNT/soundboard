@@ -5,6 +5,9 @@ flashback.addEventListener('click',play)
 
 let dialtone = document.querySelector('#dialtone')
 dialtone.addEventListener('click',play)
+
+let fastforward = document.querySelector('#fastforward')
+fastforward.addEventListener('click',play)
 // function checks which element called it then assigns the right sound to play
 
 function play(e) {
@@ -23,6 +26,12 @@ function play(e) {
 
     } else if ( target == "dialtone") {
         sound = "./sounds/Dial Tone.mp3"
+        var audio = new Audio(sound);
+        audio.play();
+    }
+
+    else if (target = "dialtone") {
+        sound = "./sounds/Fast Forward Sound Effect.mp3";
         var audio = new Audio(sound);
         audio.play();
     }
