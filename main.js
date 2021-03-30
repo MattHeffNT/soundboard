@@ -12,7 +12,8 @@ fastforward.addEventListener('click',play)
 let angel = document.querySelector('#angels');
 angel.addEventListener('click',play);
 
-
+let moo = document.querySelector('#moo');
+moo.addEventListener('click',play);
 
 // function checks which element called it then assigns the right sound to play
 
@@ -44,6 +45,12 @@ function play(e) {
 
     else if ( target == "angels") {
         sound = "./sounds/angels.mp3"
+        var audio = new Audio(sound);
+        audio.play();
+    }
+
+    else if ( target == "moo") {
+        sound = "./sounds/Moo.mp3"
         var audio = new Audio(sound);
         audio.play();
     }
