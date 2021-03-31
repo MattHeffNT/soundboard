@@ -18,8 +18,11 @@ moo.addEventListener('click',play);
 let kaching = document.querySelector('#kaching');
 kaching.addEventListener('click',play);
 
+let lightning = document.querySelector('#lightning');
+lightning.addEventListener('click',play);
+
 // function checks which element called it then assigns the right sound to play
-S
+
 function play(e) {
 
     // get id of button that clicked 
@@ -61,6 +64,12 @@ function play(e) {
 
     else if ( target == "kaching") {
         sound = "./sounds/Cash Register (Kaching) - Sound Effect (HD).mp3";
+        var audio = new Audio(sound);
+        audio.play();
+    }
+
+    else if ( target == "lightning") {
+        sound = "./sounds/Lightning Storm Sound Effect.mp3";
         var audio = new Audio(sound);
         audio.play();
     }
