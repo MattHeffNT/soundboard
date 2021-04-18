@@ -26,57 +26,54 @@ lightning.addEventListener('click',play);
 function play(e) {
 
     // get id of button that clicked 
-    var target = e.srcElement.id
+    let target = e.srcElement.id
 
     e.preventDefault()
     console.log(target)
 
-    // select right sound effect based on id then play sound
+    switch (target) {
 
-    if (target == "flashback") {
-        sound = './sounds/Flashback Sound Effect.mp3';
-        var audio = new Audio(sound);
-        audio.play();
+        case "flashback":
+            sound = './sounds/Flashback Sound Effect.mp3';
+            var audio = new Audio(sound);
+            audio.play();
+            break;
 
-    } else if ( target == "dialtone") {
-        sound = "./sounds/Dial Tone.mp3";
-        var audio = new Audio(sound);
-        audio.play();
+        case "dialtone":
+            sound = "./sounds/Dial Tone.mp3";
+            var audio = new Audio(sound);
+            audio.play();
+            break;
+
+        case "fastforward":
+            sound = "./sounds/Fast Forward Sound Effect.mp3";
+            var audio = new Audio(sound);
+            audio.play();
+            break;
+
+        case "angels":
+            sound = "./sounds/angels.mp3";
+            var audio = new Audio(sound);
+            audio.play();
+            break;
+
+        case "moo":
+            sound = "./sounds/Moo.mp3";
+            var audio = new Audio(sound);
+            audio.play();
+            break;
+
+         case "kaching":
+            sound = "./sounds/Cash Register (Kaching) - Sound Effect (HD).mp3";
+            var audio = new Audio(sound);
+            audio.play();
+            break;
+ 
+        case "lightning":
+            sound = "./sounds/Lightning Storm Sound Effect.mp3";
+            var audio = new Audio(sound);
+            audio.play();
+            break;
     }
-
-    else if (target == "fastforward") {
-        sound = "./sounds/Fast Forward Sound Effect.mp3";
-        var audio = new Audio(sound);
-        audio.play();
-    }
-
-    else if ( target == "angels") {
-        sound = "./sounds/angels.mp3";
-        var audio = new Audio(sound);
-        audio.play();
-    }
-
-    else if ( target == "moo") {
-        sound = "./sounds/Moo.mp3";
-        var audio = new Audio(sound);
-        audio.play();
-    }
-
-    else if ( target == "kaching") {
-        sound = "./sounds/Cash Register (Kaching) - Sound Effect (HD).mp3";
-        var audio = new Audio(sound);
-        audio.play();
-    }
-
-    else if ( target == "lightning") {
-        sound = "./sounds/Lightning Storm Sound Effect.mp3";
-        var audio = new Audio(sound);
-        audio.play();
-    }
-
-
-
-
-
 
 }
