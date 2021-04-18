@@ -31,49 +31,8 @@ function play(e) {
     e.preventDefault()
     console.log(target)
 
-    switch (target) {
-
-        case "flashback":
-            sound = './sounds/Flashback Sound Effect.mp3';
-            var audio = new Audio(sound);
-            audio.play();
-            break;
-
-        case "dialtone":
-            sound = "./sounds/Dial Tone.mp3";
-            var audio = new Audio(sound);
-            audio.play();
-            break;
-
-        case "fastforward":
-            sound = "./sounds/Fast Forward Sound Effect.mp3";
-            var audio = new Audio(sound);
-            audio.play();
-            break;
-
-        case "angels":
-            sound = "./sounds/angels.mp3";
-            var audio = new Audio(sound);
-            audio.play();
-            break;
-
-        case "moo":
-            sound = "./sounds/Moo.mp3";
-            var audio = new Audio(sound);
-            audio.play();
-            break;
-
-         case "kaching":
-            sound = "./sounds/Cash Register (Kaching) - Sound Effect (HD).mp3";
-            var audio = new Audio(sound);
-            audio.play();
-            break;
- 
-        case "lightning":
-            sound = "./sounds/Lightning Storm Sound Effect.mp3";
-            var audio = new Audio(sound);
-            audio.play();
-            break;
-    }
+    sound = `./sounds/${target}.mp3`;
+    var audio = new Audio(sound);
+    audio.play();
 
 }
