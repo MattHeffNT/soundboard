@@ -12,7 +12,7 @@ fastforward.addEventListener('click',play)
 let angel = document.querySelector('#angels');
 angel.addEventListener('click',play);
 
-let moo = document.querySelector('#moo');
+let moo = document.querySelector('#Moo');
 moo.addEventListener('click',play);
 
 let kaching = document.querySelector('#kaching');
